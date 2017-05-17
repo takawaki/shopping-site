@@ -85,9 +85,7 @@ p, ul {
 
 ====================================================*/
 header #header_inner {
-  padding: 10px 0;
-  width: 95%;
-  max-width: 940px; }
+  padding: 10px 0; }
   header #header_inner .logo {
     text-align: center;
     background: url("../images/top_sp/logo.png") no-repeat center center;
@@ -127,9 +125,6 @@ header #header_inner {
 =====================================================*/
 .container {
   margin: 0 auto;
-  width: 95%;
-  padding: 0;
-  max-width: 940px;
   /*=============================================================
   
   サブコンテンツの詳細表示設定
@@ -154,33 +149,30 @@ header #header_inner {
         vertical-align: middle; }
       .container .main_contents #topic_path span {
         margin: 0 7px; }
-    .container .main_contents #main_visual {
-      width: 95%;
-      margin: 0 auto; }
-      .container .main_contents #main_visual ul {
-        margin: 0; }
-        .container .main_contents #main_visual ul li {
-          list-style: none;
-          margin: 0;
-          width: 100%; }
-          .container .main_contents #main_visual ul li img {
-            vertical-align: bottom;
-            height: auto; }
-        .container .main_contents #main_visual ul .owl-dots {
-          text-align: left;
-          margin: 0;
-          padding-left: 5px; }
-          .container .main_contents #main_visual ul .owl-dots .owl-dot span {
-            background-color: black;
-            border-radius: 0;
-            width: 40px;
-            height: 3px;
-            margin: 0 10px 0 0; }
-          .container .main_contents #main_visual ul .owl-dots .owl-dot.active span {
-            background-color: #9d1a2d; }
-          @media (min-width: 769px) {
-            .container .main_contents #main_visual ul .owl-dots {
-              padding-left: 0px; } }
+    .container .main_contents #main_visual ul {
+      margin: 0; }
+      .container .main_contents #main_visual ul li {
+        list-style: none;
+        margin: 0;
+        width: 100%; }
+        .container .main_contents #main_visual ul li img {
+          vertical-align: bottom;
+          height: auto; }
+      .container .main_contents #main_visual ul .owl-dots {
+        text-align: left;
+        margin: 0;
+        padding-left: 5px; }
+        .container .main_contents #main_visual ul .owl-dots .owl-dot span {
+          background-color: black;
+          border-radius: 0;
+          width: 40px;
+          height: 3px;
+          margin: 0 10px 0 0; }
+        .container .main_contents #main_visual ul .owl-dots .owl-dot.active span {
+          background-color: #9d1a2d; }
+        @media (min-width: 769px) {
+          .container .main_contents #main_visual ul .owl-dots {
+            padding-left: 0px; } }
     .container .main_contents #page_visual {
       margin: 10px 0; }
       .container .main_contents #page_visual img {
@@ -191,40 +183,40 @@ header #header_inner {
       margin: 0;
       padding: 10px;
       text-indent: -9999px; }
-      @media (max-width: 768px) {
+      @media (max-width: 550px) {
         .container .main_contents .section_title.new_item {
           background: url("../images/top_sp/title_new_item.png") no-repeat center center;
           background-size: 97px 12px; } }
-  @media screen and (max-width: 768px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
+  @media screen and (max-width: 550px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 550px) and (min-resolution: 2dppx) {
     .container .main_contents .section_title.new_item {
       background: url("../images/top_sp/title_new_item@2x.png") no-repeat center center;
       background-size: 97px 12px; } }
-      @media (max-width: 768px) {
+      @media (max-width: 550px) {
         .container .main_contents .section_title.popular_item {
           background: url("../images/top_sp/title_popular.png") no-repeat center center;
           background-size: 138px 12px; } }
-  @media screen and (max-width: 768px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
+  @media screen and (max-width: 550px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 550px) and (min-resolution: 2dppx) {
     .container .main_contents .section_title.popular_item {
       background: url("../images/top_sp/title_popular@2x.png") no-repeat center center;
       background-size: 138px 12px; } }
-      @media (max-width: 768px) {
+      @media (max-width: 550px) {
         .container .main_contents .section_title.shopping_guide {
           background: url("../images/top_sp/title_guide.png") no-repeat center center;
           background-size: 151px 12px; } }
-  @media screen and (max-width: 768px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
+  @media screen and (max-width: 550px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 550px) and (min-resolution: 2dppx) {
     .container .main_contents .section_title.shopping_guide {
       background: url("../images/top_sp/title_guide@2x.png") no-repeat center center;
       background-size: 151px 12px; } }
-      @media (max-width: 768px) {
+      @media (max-width: 550px) {
         .container .main_contents .section_title.recent_pro {
           background: url("../images/list/title_recent_pro.png") no-repeat center center;
           background-size: 99px 16px; } }
-  @media screen and (max-width: 768px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 768px) and (min-resolution: 2dppx) {
+  @media screen and (max-width: 550px) and (-webkit-min-device-pixcel-ratio: 2), (max-width: 550px) and (min-resolution: 2dppx) {
     .container .main_contents .section_title.recent_pro {
       background: url("../images/list/title_recent_pro@2x.png") no-repeat center center;
       background-size: 99px 16px; } }
 
-      @media (min-width: 769px) {
+      @media (min-width: 551px) {
         .container .main_contents .section_title.new_item {
           background: url("../images/top/title_newitems.png") no-repeat center center; }
         .container .main_contents .section_title.popular_item {
@@ -284,6 +276,9 @@ header #header_inner {
               height: auto; }
           .container .main_contents .section_contents.guide .contents_detail ul li:last-child {
             margin-bottom: 0; }
+          .container .main_contents .section_contents.guide .contents_detail ul li.cards img {
+            width: 100%;
+            height: auto; }
   .container .sub_contents .section_contents {
     margin-bottom: 15px; }
     .container .sub_contents .section_contents .contents_detail h3 {
@@ -294,9 +289,9 @@ header #header_inner {
       margin: 0;
       letter-spacing: 0.1em; }
       .container .sub_contents .section_contents .contents_detail h3.list_show_title {
-        background: #887f69 url("../images/top/next_icon.png") no-repeat 97% center; }
+        background: #887f69 url("../images/top/next_icon.png") no-repeat 95% center; }
       .container .sub_contents .section_contents .contents_detail h3.down {
-        background: #887f69 url("../images/top/down_icon.png") no-repeat 97% center; }
+        background: #887f69 url("../images/top/down_icon.png") no-repeat 95% center; }
     .container .sub_contents .section_contents .contents_detail ul {
       margin: 0; }
       .container .sub_contents .section_contents .contents_detail ul li {
@@ -327,22 +322,24 @@ header #header_inner {
       width: 100%;
       background-color: #fff; }
       .container .sub_contents .section_contents.search .contents_detail div {
-        padding: 0 12px; }
+        text-align: center; }
         .container .sub_contents .section_contents.search .contents_detail div form {
           margin: 0;
           padding: 10px 0; }
           .container .sub_contents .section_contents.search .contents_detail div form input[type='text'] {
             background-color: #eeeeee;
             border: none;
-            float: left;
-            width: 242px;
-            border-radius: 0; }
+            display: inline;
+            border-radius: 0;
+            width: 80%;
+            vertical-align: bottom; }
           .container .sub_contents .section_contents.search .contents_detail div form input[type='image'] {
             background-color: #eeeeee;
             border: none;
             padding: 11px;
-            float: left;
-            border-radius: 0; }
+            display: inline;
+            border-radius: 0;
+            vertical-align: middle; }
 
 #page_top_btn {
   text-align: center; }
@@ -355,11 +352,12 @@ header #header_inner {
 
 ===============================================================*/
 footer {
-  width: 95%;
+  width: 90%;
   margin: 10px auto 0 auto;
   text-align: center; }
   footer #footer_inner {
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-top: 1px solid gray;
     font-size: 1.2rem;
     letter-spacing: 0; }
@@ -387,19 +385,18 @@ PC・タブレット表示表示
 ヘッダー 
 
 ====================================================*/
-@media (min-width: 769px) {
+@media (min-width: 551px) {
   header #header_inner {
-    padding: 20px 0 30px 0;
-    max-width: 940px; }
+    padding: 20px 0 30px 0; }
     header #header_inner .logo {
       height: 40px;
       text-align: left;
       background: url("../images/top/logo.png") no-repeat left center;
       background-size: 141px 40px; } }
-    @media screen and (min-width: 769px) and (-webkit-min-device-pixcel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
+    @media screen and (min-width: 551px) and (-webkit-min-device-pixcel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {
       header #header_inner .logo {
         background-image: url("../images/top/logo@2x.png") no-repeat left center; } }
-@media (min-width: 769px) {
+@media (min-width: 551px) {
       header #header_inner .logo a {
         display: block;
         width: 141px;
@@ -415,7 +412,7 @@ PC・タブレット表示表示
         list-style: none;
         display: inline;
         margin-bottom: 0;
-        margin-left: 10px; }
+        margin-left: 8px; }
         header #header_inner .pc_navi li img {
           vertical-align: bottom; }
         header #header_inner .pc_navi li img.menu_icon {
@@ -426,7 +423,7 @@ PC・タブレット表示表示
 TOPページ：メインコンテンツの詳細表示設定 
 
 ==============================================================*/
-@media (min-width: 769px) {
+@media (min-width: 551px) {
   .section_title {
     margin: 0;
     padding: 10px;
@@ -487,7 +484,7 @@ TOPページ：メインコンテンツの詳細表示設定
 ショッピングガイドの表示設定
 
 ==============================================================*/
-@media (min-width: 769px) {
+@media (min-width: 551px) {
   .container .main_contents .section_contents.guide .contents_detail {
     float: left;
     width: 50%;
@@ -500,7 +497,7 @@ TOPページ：メインコンテンツの詳細表示設定
 サブコンテンツの詳細表示設定　PC表示
 
 ==============================================================*/
-@media (min-width: 769px) {
+@media (min-width: 551px) {
   .container .sub_contents {
     width: 24%;
     margin-left: 2%; }
@@ -525,7 +522,10 @@ TOPページ：メインコンテンツの詳細表示設定
             .container .sub_contents .section_contents .contents_detail ul li div p {
               margin-bottom: 10px; }
             .container .sub_contents .section_contents .contents_detail ul li div p + p {
-              text-align: center; }
+              text-align: center;
+              margin-bottom: 0px; }
+          .container .sub_contents .section_contents .contents_detail ul li a {
+            padding: 0; }
     .container .sub_contents .section_contents.search {
       background-color: #fff;
       margin: 0 auto 15px auto; }
@@ -534,22 +534,23 @@ TOPページ：メインコンテンツの詳細表示設定
         width: 100%;
         background-color: #fff; }
         .container .sub_contents .section_contents.search .contents_detail div {
-          padding: 15px; }
+          padding: 10px; }
           .container .sub_contents .section_contents.search .contents_detail div form {
             margin: 0;
             padding: 0; }
-            .container .sub_contents .section_contents.search .contents_detail div form input[type='text'] {
-              width: 155px; }
-            .container .sub_contents .section_contents.search .contents_detail div form input[type='image'] {
-              background-color: #eeeeee;
-              border: none;
-              padding: 11px;
-              float: left; }
+            .container .sub_contents .section_contents.search .contents_detail div form div.search_box {
+              padding: 0; }
+              .container .sub_contents .section_contents.search .contents_detail div form div.search_box input[type='text'] {
+                width: 73%; }
+              .container .sub_contents .section_contents.search .contents_detail div form div.search_box input[type='image'] {
+                background-color: #eeeeee;
+                border: none;
+                padding: 11px; }
 
   #page_top_btn {
     text-align: right;
-    max-width: 940px;
-    width: 100%;
+    max-width: 960px;
+    width: 95%;
     margin: 0 auto;
     margin-top: 35px; }
     #page_top_btn img {
@@ -559,7 +560,7 @@ TOPページ：メインコンテンツの詳細表示設定
 フッター
 
 ==============================================================*/
-@media (min-width: 769px) {
+@media (min-width: 551px) {
   footer {
     width: 100%;
     margin: 10px auto 0 auto;
@@ -568,7 +569,7 @@ TOPページ：メインコンテンツの詳細表示設定
       padding: 25px 0 0px 0;
       border-top: 1px solid gray;
       font-size: 12px;
-      max-width: 940px;
+      max-width: 960px;
       margin: 0 auto; }
       footer #footer_inner ul {
         margin: 0 auto; }
@@ -621,7 +622,7 @@ product.htmlの設定
 .container .main_contents .section_contents.product .contents_detail div #main_view {
   width: 100%;
   height: auto; }
-  @media (min-width: 769px) {
+  @media (min-width: 551px) {
     .container .main_contents .section_contents.product .contents_detail div #main_view {
       float: left;
       width: 430px; } }
@@ -643,7 +644,7 @@ product.htmlの設定
       transition-duration: .5s; }
       .container .main_contents .section_contents.product .contents_detail div .thumb_list li img:hover {
         opacity: .5; }
-  @media (min-width: 769px) {
+  @media (min-width: 551px) {
     .container .main_contents .section_contents.product .contents_detail div .thumb_list {
       float: right;
       width: 166px;
@@ -657,14 +658,14 @@ product.htmlの設定
         margin-bottom: 9px; }
         .container .main_contents .section_contents.product .contents_detail div .thumb_list li:nth-child(5n) {
           margin-right: 9px; } }
-@media (min-width: 769px) {
+@media (min-width: 551px) {
   .container .main_contents .section_contents.product .contents_detail div.product_area {
     padding: 10px 45px; } }
 
 .purchase_area {
   padding: 0;
   clear: both; }
-  @media (min-width: 769px) {
+  @media (min-width: 551px) {
     .purchase_area {
       padding: 30px 10px 0 10px; } }
   .purchase_area div.detail {
@@ -728,7 +729,7 @@ product.htmlの設定
         .purchase_area div.detail.price p span span {
           font-size: 2.2rem;
           margin-right: 5px; }
-    @media (min-width: 769px) {
+    @media (min-width: 551px) {
       .purchase_area div.detail.price {
         width: 55%;
         float: left; } }
@@ -744,7 +745,7 @@ product.htmlの設定
         width: 100px;
         border-radius: 0;
         border-color: #e3e8cf; }
-      @media (min-width: 769px) {
+      @media (min-width: 551px) {
         .purchase_area div.detail.quantity {
           width: 55%;
           float: left; }
@@ -772,7 +773,7 @@ product.htmlの設定
         margin: 10px 0; }
         .purchase_area div.detail.explain table th {
           width: 30%; }
-      @media (min-width: 769px) {
+      @media (min-width: 551px) {
         .purchase_area div.detail.explain {
           padding-top: 35px; }
           .purchase_area div.detail.explain h4 {
@@ -791,7 +792,7 @@ product.htmlの設定
       background-size: 225px 55px;
       border-radius: 0;
       vertical-align: bottom; }
-    @media (min-width: 769px) {
+    @media (min-width: 551px) {
       .purchase_area div.cart {
         display: inline-block;
         width: 45%;

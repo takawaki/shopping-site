@@ -133,8 +133,7 @@ p,ul{
 header{
     #header_inner{
         padding:10px 0;
-        width:95%;
-        max-width:940px;
+       
         
         .logo{
             
@@ -196,9 +195,6 @@ header{
 
 .container{
     margin:0 auto;
-    width:95%;
-    padding:0;
-    max-width:940px;
     
     
     .main_contents{
@@ -224,8 +220,7 @@ header{
          
         //メインビジュアルの設定
         #main_visual{
-               width:95%;
-               margin:0 auto;
+              
             ul{
                 margin:0;
                 //カルーセルの表示設定
@@ -294,7 +289,7 @@ header{
     
     //スマホ・ファブレット表示
     
-    @media (max-width:768px){
+    @media (max-width:550px){
         
     &.new_item{
         background: url("../images/top_sp/title_new_item.png") no-repeat center center;
@@ -338,7 +333,7 @@ header{
     
     //PC表示設定
     
-    @media (min-width:769px){
+    @media (min-width:551px){
     &.new_item{
         background: url("../images/top/title_newitems.png") no-repeat center center;
     }//.new_item
@@ -441,6 +436,13 @@ header{
                     margin-bottom:0;
                 }
                 
+                //カード画像の表示設定
+                &.cards{
+                    img{
+                        width:100%;
+                        height:auto;
+                    }
+                }
                 
              }//li
          }
@@ -472,11 +474,11 @@ header{
                 
                
                 &.list_show_title{
-                background: $key-color url("../images/top/next_icon.png") no-repeat 97% center;
+                background: $key-color url("../images/top/next_icon.png") no-repeat 95% center;
                 
                 }
                 &.down{
-                background: $key-color url("../images/top/down_icon.png") no-repeat 97% center;
+                background: $key-color url("../images/top/down_icon.png") no-repeat 95% center;
                 
                 }
             }
@@ -526,7 +528,8 @@ header{
                  background-color: #fff;
                 
                 div{
-                    padding:0 12px;
+                    text-align:center;
+                    
                     form{
                         
                         margin:0;
@@ -535,9 +538,10 @@ header{
                         input[type='text']{
                             background-color:#eeeeee;
                             border:none;
-                            float:left;
-                            width:242px;
+                            display:inline;
                             border-radius:0;
+                            width:80%;
+                            vertical-align:bottom;
                             
                            
                         }
@@ -545,8 +549,9 @@ header{
                             background-color:#eeeeee;
                             border:none;
                             padding:11px;
-                            float:left;
+                            display:inline;
                             border-radius:0;
+                            vertical-align:middle;
                                 }
                     }//form
                 }
@@ -573,11 +578,12 @@ header{
 ===============================================================*/
     
 footer{
-    width:95%;
+    width:90%;
     margin:10px auto 0 auto;
     text-align:center;
     #footer_inner{
-        padding:10px;
+        padding-top:10px;
+        padding-bottom:10px;
         border-top:1px solid gray;
         font-size:1.2rem;
         letter-spacing:0;
@@ -623,12 +629,12 @@ PC・タブレット表示表示
 
 ====================================================*/
 
-@media (min-width:769px){
+@media (min-width:551px){
 header{
    
     #header_inner{
         padding:20px 0 30px 0;
-        max-width:940px;
+        
         
         .logo{
             height:40px;
@@ -660,7 +666,7 @@ header{
                 list-style:none;
                 display:inline;
                 margin-bottom:0;
-                margin-left:10px;
+                margin-left:8px;
                 img{
                     vertical-align:bottom;
                     
@@ -683,7 +689,7 @@ TOPページ：メインコンテンツの詳細表示設定
 
 ==============================================================*/
 
-@media (min-width:769px){
+@media (min-width:551px){
 
     .section_title{
     margin:0;
@@ -794,7 +800,7 @@ TOPページ：メインコンテンツの詳細表示設定
 
 ==============================================================*/
 
-@media (min-width:769px){
+@media (min-width:551px){
 
 .container .main_contents .section_contents.guide{
    
@@ -817,7 +823,7 @@ TOPページ：メインコンテンツの詳細表示設定
 
 ==============================================================*/
 
-@media (min-width:769px){
+@media (min-width:551px){
 
 .container{
     .sub_contents{
@@ -849,9 +855,13 @@ TOPページ：メインコンテンツの詳細表示設定
                             }
                             p+p{
                                 text-align:center;
+                                margin-bottom:0px;
                                 
                             }
                             
+                        }
+                        a{
+                            padding:0;
                         }
                     }
                 }//ul
@@ -870,22 +880,28 @@ TOPページ：メインコンテンツの詳細表示設定
                  background-color: #fff;
                 
                 div{
-                    padding:15px;
+                    padding:10px;
+                    
+                    
                     form{
-                        
                         margin:0;
                         padding:0;
+                        div.search_box{
+                           
+                            padding:0;
+                        
                         
                         input[type='text']{
-                            //width:140px;
-                           width:155px;
+                           
+                           width:73%;
                         }
                         input[type='image']{
                             background-color:#eeeeee;
                             border:none;
                             padding:11px;
-                            float:left;
+                            
                                 }
+                        }//.seach_box
                     }//form
                 }
         }//contents_detail 
@@ -895,8 +911,8 @@ TOPページ：メインコンテンツの詳細表示設定
 
 #page_top_btn{
     text-align:right;
-    max-width:940px;
-    width:100%;
+    max-width:960px;  
+    width:95%;
     margin:0 auto;
     
         margin-top:35px;
@@ -906,7 +922,7 @@ TOPページ：メインコンテンツの詳細表示設定
     }
 }
     
-}//@media (min-width:769px)
+}//@media (min-width:551px)
 
 /*=============================================================
 
@@ -914,7 +930,7 @@ TOPページ：メインコンテンツの詳細表示設定
 
 ==============================================================*/
 
-@media (min-width:769px){
+@media (min-width:551px){
 footer{
     width:100%;
     margin:10px auto 0 auto;
@@ -923,7 +939,7 @@ footer{
         padding:25px 0 0px 0;
         border-top:1px solid gray;
         font-size:12px;
-        max-width:940px;
+        max-width:960px;
         margin:0 auto;
         ul{
             
@@ -1006,7 +1022,7 @@ product.htmlの設定
                     #main_view{
                         width:100%;
                         height:auto;
-                        @media (min-width:769px){
+                        @media (min-width:551px){
                             float:left;
                             width:430px;
                         }
@@ -1035,7 +1051,7 @@ product.htmlの設定
                             }
                             
                         }
-                         @media (min-width:769px){
+                         @media (min-width:551px){
                             float:right;
                             width:166px;
                             margin:0 0 0 9px;
@@ -1053,7 +1069,7 @@ product.htmlの設定
                         }
                     }//.thumb_list
                     
-                    @media (min-width:769px){
+                    @media (min-width:551px){
                     &.product_area{
                     padding:10px 45px;
                     }
@@ -1070,7 +1086,7 @@ product.htmlの設定
 .purchase_area{
     padding:0;
     clear:both;
-    @media (min-width:769px){
+    @media (min-width:551px){
         padding:30px 10px 0 10px;
         
     }
@@ -1185,7 +1201,7 @@ product.htmlの設定
                 }
             }
             
-            @media (min-width:769px){
+            @media (min-width:551px){
                 width:55%;
                 float:left;
             }
@@ -1209,7 +1225,7 @@ product.htmlの設定
                     border-color:#e3e8cf;
                 }
             }
-            @media (min-width:769px){
+            @media (min-width:551px){
                 width:55%;
                 float:left;
                 p{
@@ -1250,7 +1266,7 @@ product.htmlの設定
                 }
             }
             
-            @media (min-width:769px){
+            @media (min-width:551px){
                 padding-top:35px;
                 h4{
                     font-size:1.8rem;
@@ -1279,7 +1295,7 @@ product.htmlの設定
                 
             }
         
-        @media (min-width:769px){
+        @media (min-width:551px){
             display:inline-block;
                 width:45%;
                 padding:0;
