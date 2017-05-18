@@ -629,40 +629,101 @@ PC・タブレット表示表示
 
 ====================================================*/
 
-//551px~660pxまでの間、PCナビメニューがカラム落ちするため、センタリングするように設定
-@media (max-width:660px){
-    #header_inner{
-        .four.columns{
-            width: 100%;
-            float: left;
-            box-sizing: border-box;
-            .logo{
-                text-align: center;
-                background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top/logo.png?livereload=1495093594101) no-repeat center center;
-                height: 40px;
-                a{
-                    display: block;
-                    width: 99px;
-                    height: 28px;
-                    margin: 0 auto;
-                }
-            }//logo
+// //551px~660pxまでの間、PCナビメニューがカラム落ちするため、センタリングするように設定
+// @media (max-width:660px){
+//     #header_inner{
+//         // .four.columns{
+//         //     width: 100%;
+//         //     float: left;
+//         //     box-sizing: border-box;
+//         //     .logo{
+//         //         text-align: center;
+//         //         background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top_sp/logo.png?livereload=1495093594101) no-repeat center center;
+//         //         height: 40px;
+//         //         a{
+//         //             display: block;
+//         //             width: 141px;
+//         //             height: 40px;
+//         //             margin: 0 auto;
+//         //         }
+//         //     }//logo
             
-        }//.four.columns
-        .eight.columns{
-            width:100%;
-            margin:0 auto;
-                .pc_navi{
-                    margin-top:10px;
-                    text-align:center;
-                }
+//         //}//.four.columns
+//         .eight.columns{
+//             width:100%;
+//             margin:0 auto;
+//                 .pc_navi{
+//                     margin-top:10px;
+//                     text-align:center;
+//                 }
                 
-            }
+//             }
     
-    }//#header_inner
-}//@media
+//     }//#header_inner
+// }//@media
 
-@media (min-width:551px){
+@media (min-width:551px) and (max-width:660px){
+    
+    header{
+        #header_inner{
+            padding:20px 0;
+            .four.columns{
+                 width: 100%;
+                 float: left;
+                 box-sizing: border-box;
+                .logo{
+                    text-align: center;
+                    background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top/logo.png?livereload=1495093594101) no-repeat center center;
+                    height: 40px;
+                    background-size:141px 40px;
+                    @media screen and (-webkit-min-device-pixcel-ratio:2),(min-resolution:2dppx){
+                      background: url("../images/top/logo@2x.png") no-repeat left center;
+                     // background-size:141px 40px;
+                    }
+                    a{
+                        display: block;
+                        width: 141px;
+                        height: 40px;
+                        margin:0 auto;
+                    }
+                }//logo
+            }//four_columns
+            
+            .eight.columns{
+                    width:100%;
+                    margin:0 auto;
+                    
+                .sp_navi{
+                    display:none;
+                }//sp_navi
+        
+        .pc_navi{
+            text-align:center;
+            display:block;
+            margin-top:16px;
+            li{
+                list-style:none;
+                display:inline;
+                margin-bottom:0;
+                margin-left:8px;
+                img{
+                    vertical-align:bottom;
+                    
+                }
+                img.menu_icon{
+                    width:24px;
+                    height:24px;
+                }
+                }
+            }//pc_navi
+            
+            }//eight_columns
+        }//#header_inner
+    }
+    
+}//@media (min-width:551px) and (max-width:660px)
+
+@media (min-width:661px){
 header{
    
     #header_inner{
@@ -682,9 +743,9 @@ header{
                     display: block;
                     width: 141px;
                     height: 40px;
-                    margin:inherit
+                    margin:inherit;
                 }
-            }
+          }//logo
         
         .sp_navi{
             display:none;
@@ -709,7 +770,7 @@ header{
                     height:24px;
                 }
             }
-        }
+        }//pc_navi
     }
     
 }
@@ -807,7 +868,8 @@ TOPページ：メインコンテンツの詳細表示設定
                 }//.detail_title
                 
                 &.otodoke_banner{
-                    width:175px;
+                    width:100%;
+                    max-width:175px;
                     img{
                         width:100%;
                         height:auto;
@@ -1100,13 +1162,13 @@ product.htmlの設定
                         
                          @media (min-width:551px){
                             float:right;
-                            width:27%;
+                            width:26%;
                             margin:0 0 0 9px;
                             box-sizing:border-box;
                             
                             li{
                                 float:left;
-                                width:46%;
+                                width:45%;
                                 margin-right:9px;
                                 margin-bottom:9px;
                                 &:nth-child(5n){
@@ -1132,6 +1194,62 @@ product.htmlの設定
     }//main_contents
 }//container
 
+//div.detail_floatのカラム落ちを防ぐ表示設定
+// @media (min-width:551px) and (max-width:660px){
+//     .purchase_area{
+//         div.detail_float{
+              
+//              width:100%;
+        
+//         }
+        
+        
+//     }//purchase_area
+// }//@media (min-width:551px) and (max-width:660px)
+
+div.cart{
+        text-align:center;
+        padding:20px 0;
+            input[type="submit"]{
+                -webkit-appearance:none;
+                appearance:none;
+                width:225px;
+                height:55px;
+                background: url("../images/products/add_to_cart.png") no-repeat center center;
+                background-size:225px 55px;
+                border-radius:0;
+                vertical-align:bottom;
+                
+            }
+}
+
+@media (min-width:798px){
+    
+    div.detail_float{
+             float:left; 
+             width:53%;
+    }
+    
+    
+div.cart{
+        float:right;
+        width:225px;
+        height:55px;
+        padding:0;
+        text-align:right;
+        // @media (min-width:551px){
+        //     input[type="submit"]{
+        //         // width:100%;
+        //         // height:auto;
+        //         background: url("../images/products/add_to_cart.png") no-repeat center center;
+        //         background-size:225px 55px;
+        //     }
+                
+                
+        // }
+            }//cart
+}//@media (max-width:661px)
+
                     
 //purchase_areaの設定
 .purchase_area{
@@ -1140,11 +1258,7 @@ product.htmlの設定
     @media (min-width:551px){
         padding:30px 15px;
         
-         div.detail_float{
-             float:left; 
-             width:53%;
-        
-        }
+         
     }
     
    
@@ -1299,7 +1413,7 @@ product.htmlの設定
                     border-color:#e3e8cf;
                 }
             }
-            @media (min-width:551px){
+            @media (min-width:798px){
                 border-bottom:none;
                 p{
                     input[type="text"]{
@@ -1353,39 +1467,7 @@ product.htmlの設定
         
     }//div.detail
     
-    div.cart{
-        text-align:center;
-        padding:15px 0;
-            input[type="submit"]{
-                -webkit-appearance:none;
-                appearance:none;
-                width:225px;
-                height:55px;
-                background: url("../images/products/add_to_cart.png") no-repeat center center;
-                background-size:225px 55px;
-                border-radius:0;
-                vertical-align:bottom;
-                
-            }
-        
-        @media (min-width:551px){
-            input[type="submit"]{
-                // width:100%;
-                // height:auto;
-                background: url("../images/products/add_to_cart.png") no-repeat center center;
-                background-size:225px 55px;
-            }
-                
-                float:right;
-                width:225px;
-                
-                height:55px;
-               
-                padding:0;
-                text-align:right;
-                
-            }//media
-    }
+    
 }//purchase_area
 
 

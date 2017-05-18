@@ -384,27 +384,47 @@ PC・タブレット表示表示
 ヘッダー 
 
 ====================================================*/
-@media (max-width: 660px) {
-  #header_inner .four.columns {
-    width: 100%;
-    float: left;
-    box-sizing: border-box; }
-    #header_inner .four.columns .logo {
-      text-align: center;
-      background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top/logo.png?livereload=1495093594101) no-repeat center center;
-      height: 40px; }
-      #header_inner .four.columns .logo a {
+@media (min-width: 551px) and (max-width: 660px) {
+  header #header_inner {
+    padding: 20px 0; }
+    header #header_inner .four.columns {
+      width: 100%;
+      float: left;
+      box-sizing: border-box; }
+      header #header_inner .four.columns .logo {
+        text-align: center;
+        background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top/logo.png?livereload=1495093594101) no-repeat center center;
+        height: 40px;
+        background-size: 141px 40px; } }
+      @media screen and (min-width: 551px) and (max-width: 660px) and (-webkit-min-device-pixcel-ratio: 2), (min-width: 551px) and (max-width: 660px) and (min-resolution: 2dppx) {
+        header #header_inner .four.columns .logo {
+          background: url("../images/top/logo@2x.png") no-repeat left center; } }
+@media (min-width: 551px) and (max-width: 660px) {
+        header #header_inner .four.columns .logo a {
+          display: block;
+          width: 141px;
+          height: 40px;
+          margin: 0 auto; }
+    header #header_inner .eight.columns {
+      width: 100%;
+      margin: 0 auto; }
+      header #header_inner .eight.columns .sp_navi {
+        display: none; }
+      header #header_inner .eight.columns .pc_navi {
+        text-align: center;
         display: block;
-        width: 99px;
-        height: 28px;
-        margin: 0 auto; }
-  #header_inner .eight.columns {
-    width: 100%;
-    margin: 0 auto; }
-    #header_inner .eight.columns .pc_navi {
-      margin-top: 10px;
-      text-align: center; } }
-@media (min-width: 551px) {
+        margin-top: 16px; }
+        header #header_inner .eight.columns .pc_navi li {
+          list-style: none;
+          display: inline;
+          margin-bottom: 0;
+          margin-left: 8px; }
+          header #header_inner .eight.columns .pc_navi li img {
+            vertical-align: bottom; }
+          header #header_inner .eight.columns .pc_navi li img.menu_icon {
+            width: 24px;
+            height: 24px; } }
+@media (min-width: 661px) {
   header #header_inner {
     padding: 20px 0 30px 0; }
     header #header_inner .logo {
@@ -412,10 +432,10 @@ PC・タブレット表示表示
       text-align: left;
       background: url("../images/top/logo.png") no-repeat left center;
       background-size: 141px 40px; } }
-    @media screen and (min-width: 551px) and (-webkit-min-device-pixcel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {
+    @media screen and (min-width: 661px) and (-webkit-min-device-pixcel-ratio: 2), (min-width: 661px) and (min-resolution: 2dppx) {
       header #header_inner .logo {
         background: url("../images/top/logo@2x.png") no-repeat left center; } }
-@media (min-width: 551px) {
+@media (min-width: 661px) {
       header #header_inner .logo a {
         display: block;
         width: 141px;
@@ -492,7 +512,8 @@ TOPページ：メインコンテンツの詳細表示設定
           font-size: 16px;
           color: #887f69; }
         .container .main_contents .section_contents.guide .contents_detail ul li.otodoke_banner {
-          width: 175px; }
+          width: 100%;
+          max-width: 175px; }
           .container .main_contents .section_contents.guide .contents_detail ul li.otodoke_banner img {
             width: 100%;
             height: auto; }
@@ -671,12 +692,12 @@ product.htmlの設定
   @media (min-width: 551px) {
     .container .main_contents .section_contents.product .contents_detail div .thumb_list {
       float: right;
-      width: 27%;
+      width: 26%;
       margin: 0 0 0 9px;
       box-sizing: border-box; }
       .container .main_contents .section_contents.product .contents_detail div .thumb_list li {
         float: left;
-        width: 46%;
+        width: 45%;
         margin-right: 9px;
         margin-bottom: 9px; }
         .container .main_contents .section_contents.product .contents_detail div .thumb_list li:nth-child(5n) {
@@ -687,15 +708,36 @@ product.htmlの設定
   .container .main_contents .section_contents.product .contents_detail div.product_area {
     padding: 10px 12px; } }
 
+div.cart {
+  text-align: center;
+  padding: 20px 0; }
+  div.cart input[type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 225px;
+    height: 55px;
+    background: url("../images/products/add_to_cart.png") no-repeat center center;
+    background-size: 225px 55px;
+    border-radius: 0;
+    vertical-align: bottom; }
+
+@media (min-width: 798px) {
+  div.detail_float {
+    float: left;
+    width: 53%; }
+
+  div.cart {
+    float: right;
+    width: 225px;
+    height: 55px;
+    padding: 0;
+    text-align: right; } }
 .purchase_area {
   padding: 0;
   clear: both; }
   @media (min-width: 551px) {
     .purchase_area {
-      padding: 30px 15px; }
-      .purchase_area div.detail_float {
-        float: left;
-        width: 53%; } }
+      padding: 30px 15px; } }
   .purchase_area div.detail {
     padding: 25px 0;
     border-top: 1px solid #e3e8cf; }
@@ -775,7 +817,7 @@ product.htmlの設定
         width: 100px;
         border-radius: 0;
         border-color: #e3e8cf; }
-      @media (min-width: 551px) {
+      @media (min-width: 798px) {
         .purchase_area div.detail.quantity {
           border-bottom: none; }
           .purchase_area div.detail.quantity p input[type="text"] {
@@ -805,27 +847,5 @@ product.htmlの設定
             font-size: 1.8rem; }
           .purchase_area div.detail.explain h4 + h4 {
             font-size: 1.6rem; } }
-  .purchase_area div.cart {
-    text-align: center;
-    padding: 15px 0; }
-    .purchase_area div.cart input[type="submit"] {
-      -webkit-appearance: none;
-      appearance: none;
-      width: 225px;
-      height: 55px;
-      background: url("../images/products/add_to_cart.png") no-repeat center center;
-      background-size: 225px 55px;
-      border-radius: 0;
-      vertical-align: bottom; }
-    @media (min-width: 551px) {
-      .purchase_area div.cart {
-        float: right;
-        width: 225px;
-        height: 55px;
-        padding: 0;
-        text-align: right; }
-        .purchase_area div.cart input[type="submit"] {
-          background: url("../images/products/add_to_cart.png") no-repeat center center;
-          background-size: 225px 55px; } }
 
 /*# sourceMappingURL=style.css.map */
