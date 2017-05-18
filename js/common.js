@@ -50,11 +50,14 @@ $(function(){
   
   
    //product.htmlの商品詳細画像の切り替えアニメーション
+   
+   
+   
    $(".thumb_list li img").click(function(){
        var switch_img = $(this).attr("src");
        
-       //もし、すでにクリックした画像が#main_viewに表示されていなかったら切り替えアニメーションを実行
-        if($(this).attr("src") !== $("#main_view").attr("src")){
+       //もし、すでにクリックした画像が#main_viewに表示されていなかったら、またはダミー画像でなければ切り替えアニメーションを実行
+        if($(this).attr("src") !== $("#main_view").attr("src")　&& $(this).attr("src") !== "images/products/gray_pro_img.jpg"){
             
             //画像切り替えアニメーションを定義
                var switcher = function(){
@@ -63,7 +66,7 @@ $(function(){
                }
                
         //クリックしたら一度フェードアウトしてから画像を切り替えて、再びフェードイン(switcher関数を実行)
-          $("#main_view").stop().animate({opacity:"0"},500,'linear',switcher);
+        $("#main_view").stop().animate({opacity:"0"},500,'linear',switcher);
           
         }//if
    })//click

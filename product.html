@@ -32,7 +32,7 @@
         <header>
             <div id="header_inner" class="contents container">
                 <div class="row">
-                    <div class="six columns">
+                    <div class="four columns">
                     
                 <!--　ロゴ表示　-->
                         <div class="logo">
@@ -41,14 +41,14 @@
                     </div><!-- six_colunms -->
                     
                <!-- ナビ表示 -->
-                <div class="six columns">
+                <div class="eight columns">
                    
                     <ul class="sp_navi">
                         <li>
-                            <img src="images/top_sp/fb_png" srcset="images/top_sp/fb@2x.png"  alt="facebookアイコン" id="menu_icon">
+                            <a href="#"><img src="images/top_sp/fb_png" srcset="images/top_sp/fb@2x.png"  alt="facebookアイコン" id="menu_icon"></a>
                         </li>
                         <li>
-                             <img src="images/top_sp/insta_png" srcset="images/top_sp/insta@2x.png"  alt="インスタグラムアイコン">
+                             <a href="#"><img src="images/top_sp/insta_png" srcset="images/top_sp/insta@2x.png"  alt="インスタグラムアイコン"></a>
                         </li>
                         <li class="menu">
                              <a href="#"><img src="images/top_sp/menu_icon_ong" srcset="images/top_sp/menu_icon@2x.png" id="menu_btn" alt="メニューアイコン"></a>
@@ -57,28 +57,26 @@
                     
                     <ul class="pc_navi">
                         <li>
-                            <img src="images/top/menu_login.png" alt="ログイン">
+                            <a href="#"><img src="images/top/menu_login.png" alt="ログイン"></a>
                         </li>
                          <li>
-                            <img src="images/top/menu_cart.png" alt="カート">
+                            <a href="#"><img src="images/top/menu_cart.png" alt="カート"></a>
                         </li>
                          <li>
-                            <img src="images/top/menu_mypage.png" alt="マイページ">
+                            <a href="#"><img src="images/top/menu_mypage.png" alt="マイページ"></a>
                         </li>
                          <li>
-                            <img src="images/top/menu_guide.png" alt="ショッピングガイド">
+                           <a href="#"> <img src="images/top/menu_guide.png" alt="ショッピングガイド"></a>
                         </li>
                        <li>
-                            <img src="images/top_sp/fb_png" srcset="images/top_sp/fb@2x.png"  alt="facebookアイコン" class ="menu_icon">
+                            <a href="#"><img src="images/top_sp/fb_png" srcset="images/top_sp/fb@2x.png"  alt="facebookアイコン" class ="menu_icon"></a>
                         </li>
                         <li>
-                             <img src="images/top_sp/insta_png" srcset="images/top_sp/insta@2x.png"  alt="インスタグラムアイコン" class="menu_icon">
+                             <a href="#"><img src="images/top_sp/insta_png" srcset="images/top_sp/insta@2x.png"  alt="インスタグラムアイコン" class="menu_icon"></a>
                         </li>
                     </ul>
-                    
-                </div><!-- six -->
-                    </div><!-- row -->
-               
+                    </div><!-- six -->
+                </div><!-- row -->
             </div><!-- header_innner -->
         </header>
         
@@ -122,13 +120,14 @@
                                                     <img src="images/products/title_color.png" alt="COLOR/SIZE">
                                                 </h4>
                                                 <table>
-                                                    <thead>
+                                                    
                                                         <tr>
-                                                            <th></th>
+                                                            <th class="first_th"></th>
+                                                            
                                                             <th>カラー1</th>
                                                             <th>カラー2</th>
                                                         </tr>
-                                                    </thead>
+                                                    
                                                     <tr>
                                                         <th>サイズ</th>
                                                         <td>
@@ -149,24 +148,28 @@
                                                 </table>
                                             </div><!-- color -->
                                             
-                                            <div class="cf detail price">
-                                                <h4 class="detail_title float">
-                                                <img src="images/products/title_price.png" alt="price">
-                                                                                            </h4>
-                                                <p><span>¥<span>1,000</span></span>(tax in)</p>
-                                            </div><!-- price -->
                                             
-                                            <div class="cf detail quantity">
-                                                <h4 class="detail_title float">
-                                                <img src="images/products/title_quantity.png" alt="Quantity(数量)">
-                                                </h4>
-                                                <p><input type="text" name="quantity"></p>
-                                            </div>
+                                                <div class="cf detail_float">
+                                                    <div class="cf detail price">
+                                                        <h4 class="detail_title float">
+                                                        <img src="images/products/title_price.png" alt="price">
+                                                                                                    </h4>
+                                                        <p><span>¥<span>1,000</span></span>(tax in)</p>
+                                                    </div><!-- price -->
+                                                    
+                                                    <div class="cf detail quantity">
+                                                        <h4 class="detail_title float">
+                                                        <img src="images/products/title_quantity.png" alt="Quantity(数量)">
+                                                        </h4>
+                                                        <p><input type="text" name="quantity"></p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="cart">
+                                                    <input type="submit" class="add_cart hover" name="submit" value="">
+                                                    <!--<img src="images/products/add_to_cart.png" class="hover" alt="カートに入れる">-->
+                                                </div>
                                             
-                                            <div class="cart">
-                                                <input type="submit" class="add_cart hover" name="submit" value="">
-                                                <!--<img src="images/products/add_to_cart.png" class="hover" alt="カートに入れる">-->
-                                            </div>
                                             
                                             <div class="detail explain">
                                                 <h4>商品説明</h4>
@@ -175,7 +178,7 @@
                                                 
                                                 <table>
                                                     <tr>
-                                                        <th>カラー</th>
+                                                        <th class="first_th">カラー</th>
                                                         <td>説明文が入ります</td>
                                                         
                                                     </tr>
@@ -261,10 +264,12 @@
                                         <li class="detail_title key_font">
                                             決済について
                                         </li>
-                                        <li>
+                                        <li class="cards">
                                             <span class="key_font">◼カード決済</span> 
-                                            <img src="images/top/cards.png" alt="利用可能なカード:VISA,Mastercard,JCB,AMEX,PayPal" width="271" height="32">
+                                            <img src="images/top/cards.png" alt="利用可能なカード:VISA,Mastercard,JCB,AMEX,PayPal" 
+                                            width="271" height="32">
                                         </li>
+                                        <li>
                                         <li>
                                             <span class="key_font">◼代金引換</span>代引き手数料がかかります。
                                         </li>
@@ -290,8 +295,9 @@
                                     <form id="cse-search-box" action="http://google.com/cse" class="cf">
                                         <input type="hidden" name="cx" value="003369286298068230578:rn_qsnva1ko" />
                                         <input type="hidden" name="ie" value="UTF-8" />
-                                        <input type="text" name="q" size="31" placeholder="search...">
-                                        <input type="image" src="images/top/search_icon.png" class="hover" width="16" height="16" alt="Search" title="Search" />
+                                        <div class="search_box">
+                                            <input type="text" name="q" placeholder="search..."><input type="image" src="images/top/search_icon.png" class="hover" width="16" height="16" alt="Search" title="Search" />
+                                        </div>
                                     </form>
                                 </div>
                             </div>
@@ -371,14 +377,18 @@
                 </p>
             
             <footer>
-                <div id="footer_inner">
-                    <ul class="cf">
-                        <li>特定商取引に基づく表記</li>
-                        <li><span>・</span>プライバシーポリシー</li>
-                        <li><span>・</span>マイページ</li>
-                    </ul>
-                    <p id="copyright">copyright&copy;APPLE BERRY ALL RIGHT RESERVED</p>
-                </div>
+                <div id="footer_inner" class="container">
+                    <div class="row">
+                        <div class="twelve columns">
+                            <ul class="cf">
+                                <li><a href="#">特定商取引に基づく表記</a></li>
+                                <li><a href="#"><span>・</span>プライバシーポリシー</a></li>
+                                <li><a href="#"><span>・</span>マイページ</a></li>
+                            </ul>
+                            <p id="copyright">copyright&copy;APPLE BERRY ALL RIGHT RESERVED</p>
+                        </div>
+                    </div>
+                </div><!-- footer_inner -->
             </footer>
      
     </body>

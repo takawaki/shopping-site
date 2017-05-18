@@ -499,7 +499,7 @@ header{
                             width:50%;
                             p{
                                 margin-bottom:10px;
-                                color:#000;
+                                // color:#000;
                             }
                             
                         }
@@ -1024,7 +1024,7 @@ product.htmlの設定
                         height:auto;
                         @media (min-width:551px){
                             float:left;
-                            width:430px;
+                            width:71%;
                         }
                         
                     }
@@ -1034,7 +1034,7 @@ product.htmlの設定
                             margin:0;
                             list-style:none;
                             float:left;
-                            width:18.8%;
+                            width:18.7%;
                             box-sizing:border-box;
                             margin-right:4px;
                             margin-bottom:4px;
@@ -1050,28 +1050,33 @@ product.htmlの設定
                                 }
                             }
                             
-                        }
+                        }//li
+                        
                          @media (min-width:551px){
                             float:right;
-                            width:166px;
+                            width:27%;
                             margin:0 0 0 9px;
                             box-sizing:border-box;
-                            height:410px;
+                            
                             li{
                                 float:left;
-                                width:44.5%;
+                                width:46%;
                                 margin-right:9px;
                                 margin-bottom:9px;
                                 &:nth-child(5n){
                                 margin-right:9px;
-                            }
-                            }
+                                }
+                                &:nth-child(2n){
+                                    margin-right:0px;
+                                }
+                            
+                            }//li
                         }
                     }//.thumb_list
                     
                     @media (min-width:551px){
                     &.product_area{
-                    padding:10px 45px;
+                    padding:10px 12px;
                     }
                     }
                 }//div
@@ -1087,9 +1092,16 @@ product.htmlの設定
     padding:0;
     clear:both;
     @media (min-width:551px){
-        padding:30px 10px 0 10px;
+        padding:30px 15px;
         
+         div.detail_float{
+             float:left; 
+             width:53%;
+        
+        }
     }
+    
+   
     div.detail{
         padding:25px 0;
         border-top:1px solid #e3e8cf;
@@ -1103,6 +1115,7 @@ product.htmlの設定
         //テーブルの設定(共通)
         
         table{      
+                    table-layout: fixed;
                     width:100%;
                     margin-bottom:5px;
                     font-size:1.2rem;
@@ -1110,12 +1123,17 @@ product.htmlの設定
                     border: 1px solid #e3e8cf;
                    
                     border-collapse: collapse;
-                    
-                    th{
+                   
+                        th{
+                            
                             background-color: $base_bg;
                             border-right: 1px solid #e3e8cf;
-                            padding:10px 20px;
+                            padding:15px 0px;
                             text-align:center;
+                            
+                             &.first_th{
+                                width:30%;
+                                }
                         }//th
                     td{
                         
@@ -1160,6 +1178,16 @@ product.htmlの設定
                                 }//checkbox
                             }//label
                         }//td
+                        
+                        @media (min-width:551px){
+                            
+                            th{
+                                
+                                &.first_th{
+                                width:20%;
+                                }
+                            }
+                        }
                 }//table
         
         
@@ -1202,8 +1230,8 @@ product.htmlの設定
             }
             
             @media (min-width:551px){
-                width:55%;
-                float:left;
+                // width:55%;
+                // float:left;
             }
         }//.price
         
@@ -1226,8 +1254,7 @@ product.htmlの設定
                 }
             }
             @media (min-width:551px){
-                width:55%;
-                float:left;
+                border-bottom:none;
                 p{
                     input[type="text"]{
                         height:30px;
@@ -1256,14 +1283,14 @@ product.htmlの設定
             h4+h4{
                 border-bottom:none;
             }
-            p{
-                color:#000;
-            }
+            // p{
+            //     color:#000;
+            // }
             table{
-                margin:10px 0;
-                th{
-                    width:30%;
-                }
+                margin:20px 0;
+                // th{
+                //     width:30%;
+                // }
             }
             
             @media (min-width:551px){
@@ -1296,12 +1323,22 @@ product.htmlの設定
             }
         
         @media (min-width:551px){
-            display:inline-block;
-                width:45%;
+            input[type="submit"]{
+                // width:100%;
+                // height:auto;
+                background: url("../images/products/add_to_cart.png") no-repeat center center;
+                background-size:225px 55px;
+            }
+                
+                float:right;
+                width:225px;
+                
+                height:55px;
+               
                 padding:0;
                 text-align:right;
-                //float:left;
-            }
+                
+            }//media
     }
 }//purchase_area
 

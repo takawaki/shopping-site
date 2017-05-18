@@ -307,8 +307,7 @@ header #header_inner {
           float: right;
           width: 50%; }
           .container .sub_contents .section_contents .contents_detail ul li div p {
-            margin-bottom: 10px;
-            color: #000; }
+            margin-bottom: 10px; }
         .container .sub_contents .section_contents .contents_detail ul li a {
           padding: 12px;
           display: block; }
@@ -625,14 +624,14 @@ product.htmlの設定
   @media (min-width: 551px) {
     .container .main_contents .section_contents.product .contents_detail div #main_view {
       float: left;
-      width: 430px; } }
+      width: 71%; } }
 .container .main_contents .section_contents.product .contents_detail div .thumb_list {
   margin: 10px 0; }
   .container .main_contents .section_contents.product .contents_detail div .thumb_list li {
     margin: 0;
     list-style: none;
     float: left;
-    width: 18.8%;
+    width: 18.7%;
     box-sizing: border-box;
     margin-right: 4px;
     margin-bottom: 4px; }
@@ -647,27 +646,31 @@ product.htmlの設定
   @media (min-width: 551px) {
     .container .main_contents .section_contents.product .contents_detail div .thumb_list {
       float: right;
-      width: 166px;
+      width: 27%;
       margin: 0 0 0 9px;
-      box-sizing: border-box;
-      height: 410px; }
+      box-sizing: border-box; }
       .container .main_contents .section_contents.product .contents_detail div .thumb_list li {
         float: left;
-        width: 44.5%;
+        width: 46%;
         margin-right: 9px;
         margin-bottom: 9px; }
         .container .main_contents .section_contents.product .contents_detail div .thumb_list li:nth-child(5n) {
-          margin-right: 9px; } }
+          margin-right: 9px; }
+        .container .main_contents .section_contents.product .contents_detail div .thumb_list li:nth-child(2n) {
+          margin-right: 0px; } }
 @media (min-width: 551px) {
   .container .main_contents .section_contents.product .contents_detail div.product_area {
-    padding: 10px 45px; } }
+    padding: 10px 12px; } }
 
 .purchase_area {
   padding: 0;
   clear: both; }
   @media (min-width: 551px) {
     .purchase_area {
-      padding: 30px 10px 0 10px; } }
+      padding: 30px 15px; }
+      .purchase_area div.detail_float {
+        float: left;
+        width: 53%; } }
   .purchase_area div.detail {
     padding: 25px 0;
     border-top: 1px solid #e3e8cf; }
@@ -676,6 +679,7 @@ product.htmlの設定
       margin-top: 5px;
       font-size: 1.4rem; }
     .purchase_area div.detail table {
+      table-layout: fixed;
       width: 100%;
       margin-bottom: 5px;
       font-size: 1.2rem;
@@ -685,8 +689,10 @@ product.htmlの設定
       .purchase_area div.detail table th {
         background-color: #f9f8f6;
         border-right: 1px solid #e3e8cf;
-        padding: 10px 20px;
+        padding: 15px 0px;
         text-align: center; }
+        .purchase_area div.detail table th.first_th {
+          width: 30%; }
       .purchase_area div.detail table td {
         border-right: 1px solid #e3e8cf;
         text-align: center; }
@@ -709,6 +715,9 @@ product.htmlの設定
               background-color: #eeeeee;
               padding: 0px 1px;
               border: 2px solid #ccc1c1; }
+      @media (min-width: 551px) {
+        .purchase_area div.detail table th.first_th {
+          width: 20%; } }
     .purchase_area div.detail.color h4.detail_title {
       display: block;
       margin: 0 0 25px 0; }
@@ -729,10 +738,6 @@ product.htmlの設定
         .purchase_area div.detail.price p span span {
           font-size: 2.2rem;
           margin-right: 5px; }
-    @media (min-width: 551px) {
-      .purchase_area div.detail.price {
-        width: 55%;
-        float: left; } }
     .purchase_area div.detail.quantity {
       border-bottom: 1px solid #e3e8cf; }
       .purchase_area div.detail.quantity h4.detail_title {
@@ -747,8 +752,7 @@ product.htmlの設定
         border-color: #e3e8cf; }
       @media (min-width: 551px) {
         .purchase_area div.detail.quantity {
-          width: 55%;
-          float: left; }
+          border-bottom: none; }
           .purchase_area div.detail.quantity p input[type="text"] {
             height: 30px;
             width: 160px;
@@ -767,12 +771,8 @@ product.htmlの設定
         border-top: none; }
       .purchase_area div.detail.explain h4 + h4 {
         border-bottom: none; }
-      .purchase_area div.detail.explain p {
-        color: #000; }
       .purchase_area div.detail.explain table {
-        margin: 10px 0; }
-        .purchase_area div.detail.explain table th {
-          width: 30%; }
+        margin: 20px 0; }
       @media (min-width: 551px) {
         .purchase_area div.detail.explain {
           padding-top: 35px; }
@@ -794,9 +794,13 @@ product.htmlの設定
       vertical-align: bottom; }
     @media (min-width: 551px) {
       .purchase_area div.cart {
-        display: inline-block;
-        width: 45%;
+        float: right;
+        width: 225px;
+        height: 55px;
         padding: 0;
-        text-align: right; } }
+        text-align: right; }
+        .purchase_area div.cart input[type="submit"] {
+          background: url("../images/products/add_to_cart.png") no-repeat center center;
+          background-size: 225px 55px; } }
 
 /*# sourceMappingURL=style.css.map */
