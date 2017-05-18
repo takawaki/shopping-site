@@ -92,7 +92,7 @@ header #header_inner {
     height: 30px; }
     @media screen and (-webkit-min-device-pixcel-ratio: 2), (min-resolution: 2dppx) {
       header #header_inner .logo {
-        background-image: url("../images/top_sp/logo@2x.png") no-repeat center center; } }
+        background: url("../images/top_sp/logo@2x.png") no-repeat center center; } }
     header #header_inner .logo a {
       display: block;
       width: 99px;
@@ -384,6 +384,26 @@ PC・タブレット表示表示
 ヘッダー 
 
 ====================================================*/
+@media (max-width: 660px) {
+  #header_inner .four.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box; }
+    #header_inner .four.columns .logo {
+      text-align: center;
+      background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top/logo.png?livereload=1495093594101) no-repeat center center;
+      height: 40px; }
+      #header_inner .four.columns .logo a {
+        display: block;
+        width: 99px;
+        height: 28px;
+        margin: 0 auto; }
+  #header_inner .eight.columns {
+    width: 100%;
+    margin: 0 auto; }
+    #header_inner .eight.columns .pc_navi {
+      margin-top: 10px;
+      text-align: center; } }
 @media (min-width: 551px) {
   header #header_inner {
     padding: 20px 0 30px 0; }
@@ -394,7 +414,7 @@ PC・タブレット表示表示
       background-size: 141px 40px; } }
     @media screen and (min-width: 551px) and (-webkit-min-device-pixcel-ratio: 2), (min-width: 551px) and (min-resolution: 2dppx) {
       header #header_inner .logo {
-        background-image: url("../images/top/logo@2x.png") no-repeat left center; } }
+        background: url("../images/top/logo@2x.png") no-repeat left center; } }
 @media (min-width: 551px) {
       header #header_inner .logo a {
         display: block;
@@ -525,35 +545,39 @@ TOPページ：メインコンテンツの詳細表示設定
               margin-bottom: 0px; }
           .container .sub_contents .section_contents .contents_detail ul li a {
             padding: 0; }
-    .container .sub_contents .section_contents.search {
-      background-color: #fff;
-      margin: 0 auto 15px auto; }
-      .container .sub_contents .section_contents.search .contents_detail {
-        text-align: left;
-        width: 100%;
-        background-color: #fff; }
-        .container .sub_contents .section_contents.search .contents_detail div {
-          padding: 10px; }
-          .container .sub_contents .section_contents.search .contents_detail div form {
-            margin: 0;
+    .container .sub_contents #page_top_btn {
+      text-align: right;
+      max-width: 960px;
+      width: 95%;
+      margin: 0 auto;
+      margin-top: 35px; }
+      .container .sub_contents #page_top_btn img {
+        vertical-align: middle; } }
+@media (min-width: 551px) {
+  .container .sub_contents .section_contents.search {
+    background-color: #fff;
+    margin: 0 auto 15px auto; }
+    .container .sub_contents .section_contents.search .contents_detail {
+      text-align: left;
+      width: 100%;
+      background-color: #fff; }
+      .container .sub_contents .section_contents.search .contents_detail div {
+        padding: 10px; }
+        .container .sub_contents .section_contents.search .contents_detail div form {
+          margin: 0;
+          padding: 0; }
+          .container .sub_contents .section_contents.search .contents_detail div form div.search_box {
             padding: 0; }
-            .container .sub_contents .section_contents.search .contents_detail div form div.search_box {
-              padding: 0; }
+            .container .sub_contents .section_contents.search .contents_detail div form div.search_box input[type='text'] {
+              width: 60%; } }
+            @media (min-width: 551px) and (min-width: 722px) {
               .container .sub_contents .section_contents.search .contents_detail div form div.search_box input[type='text'] {
-                width: 73%; }
-              .container .sub_contents .section_contents.search .contents_detail div form div.search_box input[type='image'] {
-                background-color: #eeeeee;
-                border: none;
-                padding: 11px; }
-
-  #page_top_btn {
-    text-align: right;
-    max-width: 960px;
-    width: 95%;
-    margin: 0 auto;
-    margin-top: 35px; }
-    #page_top_btn img {
-      vertical-align: middle; } }
+                width: 70%; } }
+@media (min-width: 551px) {
+            .container .sub_contents .section_contents.search .contents_detail div form div.search_box input[type='image'] {
+              background-color: #eeeeee;
+              border: none;
+              padding: 11px; } }
 /*=============================================================
 
 フッター

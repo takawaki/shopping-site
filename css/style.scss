@@ -142,7 +142,7 @@ header{
             height:30px;
         
                 @media screen and (-webkit-min-device-pixcel-ratio:2),(min-resolution:2dppx){
-                  background-image: url("../images/top_sp/logo@2x.png") no-repeat center center;
+                  background: url("../images/top_sp/logo@2x.png") no-repeat center center;
               
                   }
                   a{
@@ -629,6 +629,39 @@ PC・タブレット表示表示
 
 ====================================================*/
 
+//551px~660pxまでの間、PCナビメニューがカラム落ちするため、センタリングするように設定
+@media (max-width:660px){
+    #header_inner{
+        .four.columns{
+            width: 100%;
+            float: left;
+            box-sizing: border-box;
+            .logo{
+                text-align: center;
+                background: url(https://preview.c9users.io/takawaki/techacademy-webdesign/shopping-site/images/top/logo.png?livereload=1495093594101) no-repeat center center;
+                height: 40px;
+                a{
+                    display: block;
+                    width: 99px;
+                    height: 28px;
+                    margin: 0 auto;
+                }
+            }//logo
+            
+        }//.four.columns
+        .eight.columns{
+            width:100%;
+            margin:0 auto;
+                .pc_navi{
+                    margin-top:10px;
+                    text-align:center;
+                }
+                
+            }
+    
+    }//#header_inner
+}//@media
+
 @media (min-width:551px){
 header{
    
@@ -642,7 +675,7 @@ header{
             background: url("../images/top/logo.png") no-repeat left center;
             background-size:141px 40px;
                 @media screen and (-webkit-min-device-pixcel-ratio:2),(min-resolution:2dppx){
-                  background-image: url("../images/top/logo@2x.png") no-repeat left center;
+                  background: url("../images/top/logo@2x.png") no-repeat left center;
                  // background-size:141px 40px;
                 }
                 a{
@@ -680,7 +713,7 @@ header{
     }
     
 }
-}//header @media (min-width:769)
+}//header @media (min-width:551)
 
 
 /*=============================================================
@@ -869,9 +902,31 @@ TOPページ：メインコンテンツの詳細表示設定
         }//.conents_detail
     }//section_contents
     
+    //トップに戻るボタン
+    #page_top_btn{
+    text-align:right;
+    max-width:960px;  
+    width:95%;
+    margin:0 auto;
     
-    //Google検索ボックス
-    .section_contents.search{
+        margin-top:35px;
+    
+    img{
+        vertical-align:middle;
+    }
+}
+
+}//sub_contents
+}//container
+}//@media (min-width:551px)
+    
+    
+    
+    //Google検索ボックス　カラム落ちが危惧されるためブレークポイントをこまめに設置
+@media (min-width:551px){
+    .container{
+        .sub_contents{
+            .section_contents.search{
             background-color: #fff;
             margin:0 auto 15px auto;
             .contents_detail{
@@ -893,7 +948,11 @@ TOPページ：メインコンテンツの詳細表示設定
                         
                         input[type='text']{
                            
-                           width:73%;
+                           width:60%;
+                           
+                           @media (min-width:722px){
+                               width:70%;
+                           }
                         }
                         input[type='image']{
                             background-color:#eeeeee;
@@ -906,23 +965,11 @@ TOPページ：メインコンテンツの詳細表示設定
                 }
         }//contents_detail 
     }//section_contents.search
-}//sub_contents
-}//container
-
-#page_top_btn{
-    text-align:right;
-    max-width:960px;  
-    width:95%;
-    margin:0 auto;
-    
-        margin-top:35px;
-    
-    img{
-        vertical-align:middle;
-    }
 }
-    
-}//@media (min-width:551px)
+}
+
+}//@media
+
 
 /*=============================================================
 
