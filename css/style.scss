@@ -901,8 +901,10 @@ TOPページ：メインコンテンツの詳細表示設定
 
         }//.conents_detail
     }//section_contents
-    
-    //トップに戻るボタン
+}//sub_contents
+}//container
+
+ //トップに戻るボタン
     #page_top_btn{
     text-align:right;
     max-width:960px;  
@@ -915,9 +917,6 @@ TOPページ：メインコンテンツの詳細表示設定
         vertical-align:middle;
     }
 }
-
-}//sub_contents
-}//container
 }//@media (min-width:551px)
     
     

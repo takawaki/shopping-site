@@ -545,14 +545,15 @@ TOPページ：メインコンテンツの詳細表示設定
               margin-bottom: 0px; }
           .container .sub_contents .section_contents .contents_detail ul li a {
             padding: 0; }
-    .container .sub_contents #page_top_btn {
-      text-align: right;
-      max-width: 960px;
-      width: 95%;
-      margin: 0 auto;
-      margin-top: 35px; }
-      .container .sub_contents #page_top_btn img {
-        vertical-align: middle; } }
+
+  #page_top_btn {
+    text-align: right;
+    max-width: 960px;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 35px; }
+    #page_top_btn img {
+      vertical-align: middle; } }
 @media (min-width: 551px) {
   .container .sub_contents .section_contents.search {
     background-color: #fff;
